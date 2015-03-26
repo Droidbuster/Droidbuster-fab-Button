@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <com.Droidbuster.materialfab.fab_btn 
+        android:id="@+id/imageButton1"
+        android:layout_width="80.0dp"
+        android:layout_height="80.0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="33dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/fab_ic_add_btn"
+        android:src="@drawable/fab_ic_add" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/imageButton1"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="22dp"
+        android:text="Message btn"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <com.Droidbuster.materialfab.Call_fab_button
+        android:id="@+id/imageButton2"
+        android:layout_width="80.0dp"
+        android:layout_height="80.0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="24dp"
+        android:background="@drawable/fab_ic_call"
+        android:src="@drawable/ic_call_white_24dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="Phone Btn"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <com.Droidbuster.materialfab.contact_fab_Button
+        android:id="@+id/imageButton3"
+        android:layout_width="80.0dp"
+        android:layout_height="80.0dp"
+        android:layout_alignLeft="@+id/imageButton1"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/fab_ic_contact"
+        android:src="@drawable/ic_add_contact_holo_dark" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageButton3"
+        android:layout_alignLeft="@+id/imageButton2"
+        android:layout_marginBottom="23dp"
+        android:text="Contact Btn"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
